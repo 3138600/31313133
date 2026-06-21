@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>sequential_filters</id>
+    <version>1.0</version>
+    <priority>100</priority>
+    <position>100</position>
+    <status>active</status>
+    <default_language>ru</default_language>
+    <name>Последовательные фильтры</name>
+    <description>Показывает фильтры товаров по очереди: следующий появляется только после выбора в предыдущем. Скрывает недоступные фильтры.</description>
+</addon>
