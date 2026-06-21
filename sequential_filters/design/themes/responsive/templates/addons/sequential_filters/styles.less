@@ -1,0 +1,19 @@
+/*
+ * Стили анимации для плавно появляющихся фильтров
+ */
+
+.sq-filter-animate {
+    animation: sq-fade-in-down 0.5s ease-out forwards;
+    opacity: 0; // Изначально скрыто до первого кадра анимации
+}
+
+@keyframes sq-fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
