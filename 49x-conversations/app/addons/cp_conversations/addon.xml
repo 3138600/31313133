@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<addon scheme="2.0">
+    <id>cp_conversations</id>
+    <name>Cart-Power: Conversations system</name>
+    <description>Communication between customers, vendors and administrators</description>
+    <version>4.3.1.0</version>
+    <priority>200</priority>
+    <position>200</position>
+    <status>disabled</status>
+    <has_icon>Y</has_icon>
+    <default_language>en</default_language>
+    <authors>
+        <author>
+            <name>Cart-Power</name>
+            <email>sales@cart-power.com</email>
+            <url>https://cart-power.com</url>
+        </author>
+    </authors>
+    <supplier>Cart-Power</supplier>
+    <supplier_link>https://cart-power.com</supplier_link>
+    <translations>
+        <item for="name" lang="ru">Cart-Power: Система общения</item>
+        <item for="description" lang="ru">Позволяет реализовать общение между покупателями, продавцами и администраторами магазина</item>
+    </translations>    
+    <settings edition_type="ROOT,ULT:VENDOR,MVE:VENDOR">
+        <sections>
+            <section id="general">
+                <name>General</name>
+                <translations>
+                    <item lang="ru">Основные настройки</item>
+                </translations>
+                <items>
+                    <item id="licensekey">
+                        <name>License key</name>
+                        <type>input</type>
+                        <default_value></default_value>
+                        <tooltip>Find on the detailed page of your order</tooltip>
+                        <translations>
+                            <item lang="ru">Лицензионный ключ</item>
+                            <item lang="ru" for="tooltip">Смотрите на детальной странице заказа</item>
+                        </translations>                        
+                    </item>
+                    <item id="allow_conversations_with_admin">
+                        <name>Allow to start conversation with store admin</name>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <translations>
+                            <item lang="ru">Возможность начать диалог с администратором магазина</item>
+                        </translations>
+                    </item>
+                </items>
+            </section>            
+        </sections>
+    </settings>
+   <language_variables>
+        <item lang="en" id="cp_your_license_is_not_valid">You should enter valid License Key. Please, contact us (sales@cart-power.com), if you face any issues</item>
+        <item lang="en" id="conversations">Conversations</item>
+        <item lang="en" id="conversations_menu_description">Manage conversations</item>
+        <item lang="en" id="new_conversation">New conversation</item>
+        <item lang="en" id="compose">Compose</item>
+        <item lang="en" id="start_typing_name">Type recipient name</item>
+        <item lang="en" id="attach_image">Attach image</item>
+        <item lang="en" id="conversation">Conversation</item>
+        <item lang="en" id="less_then_minutes">Less than minute</item>
+        <item lang="en" id="n_minutes_ago">[value] minute(s) ago</item>
+        <item lang="en" id="n_hours_ago">[value] hour(s) ago</item>
+        <item lang="en" id="n_days_ago">[value] day(s) ago</item>
+        <item lang="en" id="conversation_beetween">Conversation between</item>
+        <item lang="en" id="recipients">Recipients</item>
+        <item lang="en" id="show_earlier_messages">Show earlier messages</item>
+        <item lang="en" id="add_recipient">Add recipient</item>
+        <item lang="en" id="attached_image">Attached image(s)</item>
+        <item lang="en" id="block_conversations_side">Conversations side block</item>
+        <item lang="en" id="conversations_side">Conversations side block</item>
+        <item lang="en" id="inbox">Inbox</item>
+        <item lang="en" id="unread">Unread</item>
+        <item lang="en" id="spam">Spam</item>
+        <item lang="en" id="trash">Trash</item>
+        <item lang="en" id="archive">Archive</item>
+        <item lang="en" id="mark_as_unread">Mark as unread</item>
+        <item lang="en" id="move">Move</item>
+        <item lang="en" id="more">More</item>
+        <item lang="en" id="conversation_has_been_deleted">Conversation has been deleted</item>
+        <item lang="en" id="marked_as_spam">Selected conversations marked as spam</item>
+        <item lang="en" id="successfully_archived">Selected conversations archived</item>
+        <item lang="en" id="successfully_moved_to_trash">Selected conversations moved to trash</item>
+        <item lang="en" id="successfully_moved_to_inbox">Selected conversations moved to inbox</item>
+        <item lang="en" id="delete_forever">Delete forever</item>
+        <item lang="en" id="move_to_inbox">Add to inbox</item>
+        <item lang="en" id="not_spam">Not spam</item>
+        <item lang="en" id="move_to">Move to</item>
+        <item lang="en" id="conversations_successfully_moved">Selected conversations moved</item>
+        <item lang="en" id="folders">Folders</item>
+        <item lang="en" id="mark_as_read">Mark as read</item>
+        <item lang="en" id="report_spam">Report spam</item>
+        <item lang="en" id="marked_as_read">Selected conversations marked as read</item>
+        <item lang="en" id="marked_as_spam">Selected conversations marked as spam</item>
+        <item lang="en" id="marked_as_unread">Selected conversations marked as unread</item>
+        <item lang="en" id="contact_vendor">Contact vendor</item>
+        <item lang="en" id="folder_has_been_deleted">Folder has been deleted</item>
+        <item lang="en" id="conversation_history">Conversation history</item>
+        <item lang="en" id="beetween_you_and">Between you and</item>
+        <item lang="en" id="type_your_reply">Type your reply</item>
+        <item lang="en" id="message_has_been_sent">Message has been sent</item>
+        <item lang="en" id="find_text">Find text</item>
+        <item lang="en" id="selected_conversations_deleted">Selected conversations have been deleted</item>
+        <item lang="en" id="attached_files">Attached file(s)</item>
+        <item lang="en" id="use_following_link_to_check_your_inbox"></item>
+        <item lang="en" id="use_following_link_to_check_your_inbox">Please, use following link to check your</item>
+        <item lang="en" id="inbox_link">inbox</item>
+        <item lang="en" id="you_have_new_undread_message">You have new unread message</item>
+        <item lang="en" id="new_undread_message_subj">You have new unread message</item>
+        <item lang="en" id="contact">Contact</item>
+        <item lang="en" id="latest_orders">Latest orders</item>
+        <item lang="en" id="latest_conversations">Latest conversations</item>
+        <item lang="en" id="communicate_vendor">Communication with vendor</item>
+        <item lang="en" id="view_n_read_messages">View [amount] read messages</item>
+        <item lang="en" id="add_to">Add to</item>
+        <item lang="en" id="remove_from_folder">Remove from folder</item>
+        <item lang="en" id="deleted_from_folder">Selected conversations deleted from folder</item>
+        <item lang="en" id="cp_convers_user">Admin for conversation</item>
+        <item lang="en" id="cp_view_convers">View conversation</item>
+        <item lang="en" id="cp_comminicate_with_admin">Communication with admin</item>
+
+        <item lang="ru" id="cp_your_license_is_not_valid">You should enter valid License Key. Please, contact us (sales@cart-power.com), if you face any issues</item>
+        <item lang="ru" id="conversations">Диалоги</item>
+        <item lang="ru" id="conversations_menu_description">Управление диалогами</item>
+        <item lang="ru" id="new_conversation">Новый диалог</item>
+        <item lang="ru" id="compose">Написать</item>
+        <item lang="ru" id="start_typing_name">Введите имя получателя</item>
+        <item lang="ru" id="attach_image">Прикрепить файл</item>
+        <item lang="ru" id="conversation">Диалог</item>
+        <item lang="ru" id="less_then_minutes">Менне минуты назад</item>
+        <item lang="ru" id="n_minutes_ago">[value] минут(ы) назад</item>
+        <item lang="ru" id="n_hours_ago">[value] часа(ов) назад</item>
+        <item lang="ru" id="n_days_ago">[value] дня(ей) назад</item>
+        <item lang="ru" id="conversation_beetween">Диалог между</item>
+        <item lang="ru" id="recipients">Участники диалога</item>
+        <item lang="ru" id="show_earlier_messages">Загрузить ранние сообщения</item>
+        <item lang="ru" id="add_recipient">Добавить участника диалога</item>
+        <item lang="ru" id="attached_image">Прикрепленные файлы</item>
+        <item lang="ru" id="block_conversations_side">Боковая панелья для страницы диалогов</item>
+        <item lang="ru" id="conversations_side">Боковая панелья для страницы диалогов</item>
+        <item lang="ru" id="inbox">Входящие</item>
+        <item lang="ru" id="unread">Непрочитанные</item>
+        <item lang="ru" id="spam">Спам</item>
+        <item lang="ru" id="trash">Корзина</item>
+        <item lang="ru" id="archive">Архив</item>
+        <item lang="ru" id="mark_as_unread">Отметить как прочитанное</item>
+        <item lang="ru" id="move">Переместить</item>
+        <item lang="ru" id="more">Более</item>
+        <item lang="ru" id="conversation_has_been_deleted">Выбранные диалоги был успешно удален</item>
+        <item lang="ru" id="marked_as_spam">Выбранные диалоги помечены как спам</item>
+        <item lang="ru" id="successfully_archived">Выбранные диалоги заархивированы</item>
+        <item lang="ru" id="successfully_moved_to_trash">Выбранные диалоги помещены в корзину</item>
+        <item lang="ru" id="successfully_moved_to_inbox">Выбранные диалоги убраны из архива</item>
+        <item lang="ru" id="delete_forever">Удалить навсегда</item>
+        <item lang="ru" id="move_to_inbox">Убрать из архива</item>
+        <item lang="ru" id="not_spam">Не спам</item>
+        <item lang="ru" id="move_to">Переместить</item>
+        <item lang="ru" id="conversations_successfully_moved">Выбранные диалоги успешно перенесены</item>
+        <item lang="ru" id="folders">Папки</item>
+        <item lang="ru" id="mark_as_read">Пометит как прочитанное</item>
+        <item lang="ru" id="report_spam">Это спам</item>
+        <item lang="ru" id="marked_as_read">Выбранные диалоги помечены как прочитанные</item>
+        <item lang="ru" id="marked_as_unread">Выбранные диалоги помечены как непрочитанные</item>
+        <item lang="ru" id="marked_as_spam">Выбранные диалоги помеяены как спам</item>
+        <item lang="ru" id="folder_has_been_deleted">Папка была удалена</item>
+        <item lang="ru" id="conversation_history">Сообщения</item>
+        <item lang="ru" id="beetween_you_and">Между Вами и</item>
+        <item lang="ru" id="type_your_reply">Напишите Ваше сообщение</item>
+        <item lang="ru" id="message_has_been_sent">Сообщение успешно отправлено</item>
+        <item lang="ru" id="find_text">Найти</item>
+        <item lang="ru" id="selected_conversations_deleted">Выбранные диалоги были удалены</item>
+        <item lang="ru" id="attached_files">Прикрепленные файлы</item>
+        <item lang="ru" id="use_following_link_to_check_your_inbox">Перейдите по следующей ссылке чтобы</item>
+        <item lang="ru" id="inbox_link">ответить</item>
+        <item lang="ru" id="you_have_new_undread_message">У Вас новое непрочитанное сообщение</item>
+        <item lang="ru" id="new_undread_message_subj">У Вас новое непрочитанное сообщение</item>
+        <item lang="ru" id="contact">Свяжитесь с</item>
+        <item lang="ru" id="latest_orders">Последние заказы</item>
+        <item lang="ru" id="latest_conversations">Последние диалоги</item>
+        <item lang="ru" id="communicate_vendor">Связаться с продавцом</item>
+        <item lang="ru" id="view_n_read_messages">Показать все ([amount]) сообщения</item>
+        <item lang="ru" id="add_to">Добавить</item>
+        <item lang="ru" id="contact_vendor">Связаться с продавцом</item>
+        <item lang="ru" id="remove_from_folder">Удалить из папки</item>
+        <item lang="ru" id="deleted_from_folder">Выбранные диалоги удалены из папки</item>
+        <item lang="ru" id="cp_convers_user">Администратор для диалогов</item>
+        <item lang="ru" id="cp_view_convers">Посмотреть диалог</item>
+        <item lang="ru" id="cp_comminicate_with_admin">Общение с администратором</item>
+    </language_variables>
+    <queries>
+        <item for="install" >
+            CREATE TABLE `?:cp_conversations` (
+                `conversation_id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                `subject` varchar(255) NOT NULL DEFAULT '',
+                `timestamp` int(11) UNSIGNED NOT NULL DEFAULT '0',
+                `author_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
+                `order_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
+                PRIMARY KEY (`conversation_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE `?:cp_conversations`;
+        </item>
+
+        <item for="install">
+            CREATE TABLE `?:cp_messages` (
+                `message_id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                `conversation_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                `user_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                `message` MEDIUMTEXT NOT NULL DEFAULT '',
+                `timestamp` int(11) UNSIGNED NOT NULL DEFAULT '0',
+                PRIMARY KEY (`message_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE `?:cp_messages`;
+        </item>
+
+        <item for="install">
+            CREATE TABLE `?:cp_conversation_users` (
+                `conversation_id` INT(11) UNSIGNED NOT NULL DEFAULT 0,
+                `recipient_id` INT(11) UNSIGNED NOT NULL DEFAULT 0,
+                `read` VARCHAR(1) NOT NULL DEFAULT 'N',
+                `spam` VARCHAR(1) NOT NULL DEFAULT 'N',
+                `trash` VARCHAR(1) NOT NULL DEFAULT 'N',
+                `archive` VARCHAR(1) NOT NULL DEFAULT 'N',
+                `folder_id` INT(11) NOT NULL DEFAULT 0,
+                `ekey` VARCHAR(255) NOT NULL DEFAULT '',
+                 PRIMARY KEY (`conversation_id`, `recipient_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE `?:cp_conversation_users`;
+        </item>
+        <item for="install">
+            CREATE TABLE `?:cp_conversation_folders` (
+                `folder_id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                `folder` VARCHAR(255) NULL DEFAULT '',
+                `user_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                PRIMARY KEY (`folder_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE `?:cp_conversation_folders`;
+        </item>
+        <item for="install">
+            CREATE TABLE `?:cp_conversation_folder_links` (
+                `folder_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                `conversation_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                `user_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                PRIMARY KEY (`folder_id`, `conversation_id`, `user_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE `?:cp_conversation_folder_links`;
+        </item>
+        <item for="install">
+            CREATE TABLE `?:cp_conversation_message_files` (
+                `item_id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                `message_id` INT(11) UNSIGNED NOT NULL DEFAULT '0',
+                `filename` VARCHAR(255) NOT NULL DEFAULT '',
+                PRIMARY KEY (`item_id`)
+            ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+        </item>
+        <item for="uninstall">
+            DROP TABLE `?:cp_conversation_message_files`;
+        </item>
+        <item>ALTER TABLE ?:users ADD cp_for_conversation char(1) NOT NULL default 'N';</item>
+        <item for="uninstall">ALTER TABLE ?:users DROP COLUMN cp_for_conversation;</item>
+    </queries>
+</addon>
