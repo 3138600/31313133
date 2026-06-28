@@ -1,1 +1,0 @@
-<span class="cp-conver-on-review"><a class="btn" href="{"conversations.manage?start_with_user_id=`$conv_user_id`"|fn_url}">{__("new_conversation")}</a></span>
