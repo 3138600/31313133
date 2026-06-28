@@ -1,0 +1,204 @@
+.cp-recipient-search-result {
+    display: block;
+    position: absolute;
+    top: 32px;
+    z-index: 200;
+    outline: 0;
+    background-color: #fff;
+    background-image: none;
+    width: 100%;
+    max-width: 698px;
+    -o-box-sizing: border-box;
+    -ie-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    li {
+        cursor: pointer;
+        padding: 5px;
+        list-style: none;
+        a {
+            color: #404040;
+            display: block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &:hover{
+            background: #eee;
+        }
+    }
+}
+.cp-recipient-selector-wrapper {
+    position: relative;
+}
+.cp-recipient-selector-clear {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+.cp-conversation-no-avatar {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #eee;
+    i {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+.cp-subject.unread {
+    font-weight: bold;
+}
+.form-edit .control-group.cp-conversation-row:hover {
+    background: none;
+}
+.cp-message-wrapper {    
+    border: 1px solid;
+    display: inline-block;
+    //max-width: 50%;
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-bottom-color: #b3b3b3;
+    .pdf-file {
+        width: 75px;
+        height: 75px;
+        display: inline-block;
+        line-height: 75px;
+        text-align: center;
+        border: 1px solid #ddd;
+        i {
+            font-size: 35px;
+            vertical-align: middle;
+        }
+    }
+    word-break: break-all;//CP Tier
+}
+
+.cp-message-wrapper__outer {
+    margin: 0 0 0 50px;
+}
+
+.cp-message-item {
+    text-align: left;
+    margin-bottom: 5px;
+    &.cp-my-message {
+        text-align: right;
+        .cp-message-wrapper {
+            color: #fff;
+            text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+            background-color: #249bd8;
+            border-color: #04c #04c #002a80;
+            border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+        }
+        .cp-message-wrapper__outer {
+            margin: 0 50px 0 0;
+        }
+        .cp-icon-file-pdf {
+            color: #fff;
+        }
+    }
+}
+.cp-message-item:last-child {
+    margin-bottom: 0;   
+}
+
+.cp-messages-holder {
+    padding: 10px;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: none;
+    &:last-child {
+        border-bottom: 1px solid #eee;
+    }
+}
+
+.cp-message-field {
+    border: 1px solid #eee;
+    margin-top: 10px;
+    padding-top: 3px;
+    background: #fff;
+    .cp-message-field__text {
+        display: inline-block;
+        width: 85%;
+    }
+    .cp-message-field__buttons {
+        display: inline-block;
+        width: 14%;
+        text-align: right;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 100%;
+        resize: none;
+    }
+}
+.cp-message-item__date {
+    color: #808080;
+    font-size: 10px;
+}
+.cp-messages-holder__load_more {
+    text-align: center;
+}
+.cp-conversation-row {
+    .cp-conversation-avatar,
+    .cp-conversation-no-avatar {
+        border-radius: 50%;
+        float: left;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .cp-my-message {
+        .cp-conversation-avatar,
+        .cp-conversation-no-avatar {
+            float: right;
+        }
+    }
+}
+.cp-conversation-user-name {
+    font-style: italic;
+}
+.cp-custom-image-uploader {
+    .image-upload {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    span.desc {
+        display: none;
+    }
+    .attach-images .upload-box {
+        margin-top: 0;
+    }
+    .cp-multiple-buttons {
+        margin-top: 25px;
+    }
+}
+.cp-message-item__image {
+    display: inline-block;
+}
+.cp-message-item__images-message {
+    font-size: 10px;
+}
+.cp-conversations-table {
+    tr:hover {
+        cursor: pointer;
+    }
+}
