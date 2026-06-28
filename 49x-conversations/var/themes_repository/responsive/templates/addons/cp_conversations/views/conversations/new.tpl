@@ -1,0 +1,1 @@
+{include file="addons/cp_conversations/components/new_conversation.tpl"}
