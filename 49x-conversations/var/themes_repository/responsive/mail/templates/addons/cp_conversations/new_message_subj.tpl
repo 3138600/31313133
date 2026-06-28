@@ -1,1 +1,0 @@
-{__('new_undread_message_subj')}
