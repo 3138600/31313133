@@ -1,0 +1,9 @@
+
+.cp-icon-edit:before { content: '\e800'; } /* '' */
+.cp-icon-folder:before { content: '\e801'; } /* '' */
+.cp-icon-user:before { content: '\e802'; } /* '' */
+.cp-icon-picture:before { content: '\e803'; } /* '' */
+.cp-icon-reply:before { content: '\f112'; } /* '' */
+.cp-icon-thumbs-down-alt:before { content: '\f165'; } /* '' */
+.cp-icon-file-pdf:before { content: '\f1c1'; } /* '' */
+.cp-icon-trash:before { content: '\f1f8'; } /* '' */
